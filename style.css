@@ -1,0 +1,528 @@
+/*Navigation Start*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.sign-in {
+	position: fixed;
+	width: 100%;
+	top: 38%;
+	transition: 0s;
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+}
+
+.sign-in h1 {
+	margin: auto;
+	padding: 5x 0px;
+	width: 250px;
+	border-color: #5c9dd6;
+	border-style: solid;
+	color: #5c9dd6;
+	font-size: 35px;
+	border-radius: 17px;
+}
+
+.sign-in h1:hover {
+	color: #fff;
+	border-color: #5c9dd6;
+	background-color: #5c9dd6;
+}
+
+.sign-in img {
+	width: 800px
+}
+
+.sign-in img:hover {
+	scale: 105%;
+}
+
+.nav {
+	align-items: center;
+	background-color: #5c9dd6;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.xnav {
+	font-family: 'Roboto', sans-serif;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	background-color: #5c9dd6;
+}
+
+.xnav a {
+	color: #fff;
+	padding: 5px;
+	border-radius: 30px;
+	background-color: #5c9dd6;
+	text-decoration: none;
+}
+
+.xnav a:hover {
+	background-color: #fff;
+	color: #5c9dd6;
+}
+
+.navlinks li {
+	display: inline;
+}
+
+.navlinks a {
+	border-radius: 65px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+	text-decoration: none;
+}  
+
+.navlinks a:hover {
+	color: #5c9dd6;
+	background-color: #fff;
+}
+
+.logo {
+	scale: 100%;
+	vertical-align: middle;
+	width: 130px;
+}
+
+.logo:hover {
+	scale: 105%;
+}
+
+.navlinks button {
+	background-color: #fff;
+	border: none;
+	border-radius: 65px;
+	color: red;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.navlinks button:hover {
+	color: #fff;
+	background-color: red;
+}
+
+.loginBody {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: #f2f2f2;
+}
+
+.login-container {
+	background: white;
+	padding: 20px 30px;
+	border-radius: 10px;
+	width: 300px;
+}
+
+.login-container h2 {
+	color: #5c9dd6;
+	transition: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+.login-container h2 { text-align: center; }
+input[type="text"], input[type="password"] {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+.login-container button {
+	margin: auto;
+	border: solid;
+	border-color: #5c9dd6;
+	width: 100%;
+	padding: 10px;
+	background-color: #5c9dd6;
+	border-radius: 65px;
+	color: white;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.login-container button:hover {
+	color: #5c9dd6;
+	background-color: #fff;
+	border-color: #5c9dd6;
+}
+
+.error {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	color: red;
+	text-align: center;
+	display: none;
+}
+
+.toggle {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #5c9dd6;
+	margin-top: 5px;
+	cursor: pointer;
+	text-align: right;
+}
+
+#loginDisplay {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	font-weight: bold;
+	display: none;
+	background-color: white;
+	padding: 20px 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	z-index: 1000;
+}
+
+#loginDisplay span#closeLoginDisplay {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	color: #333;
+}
+/*Navigation End*/
+
+/*Intro Container Start*/
+
+.currentUser {
+	color: #5c9dd6;
+	font-weight: bolder;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+}
+
+.intro-container {
+	margin-bottom: 45px;
+	padding-top: 60px;
+	padding: 60px;
+	padding-bottom: 40px;
+	background-color: #5c9dd6;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.intro-container h1 {
+	padding-top: 35px;
+	font-size: 45px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.intro-container p {
+	line-height: 25px;
+	padding: 0 60px;
+	text-align: center;
+}
+/*Intro Container End*/
+
+/*Container Start*/
+.text-container {
+	padding-bottom: 100px;
+	color: #969696;
+	font-family: 'Roboto', sans-serif;
+}
+
+.text-container h1 {
+	padding: 40px 0;
+	font-size: 45px;
+	text-align:center;
+	font-weight: bold;
+}
+
+.text-container a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.text-container li {
+	background-color: #5c9dd6;
+	color: white;
+	border-color: #5084b1;
+	border-radius: 250px;
+	border: solid 5px;
+	text-align: justify;
+	list-style: none;
+	padding: 30px;
+}
+
+/*home-content*/
+.home-content {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 20px;
+	justify-content: center;
+}
+
+.home-column {
+	flex: 1 1 200px;
+	max-width: 700px;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.home-column button {
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+	padding: 5px;
+	background-color: #5c9dd6;
+	color: #fff;
+	border-radius: 10px;
+	border-style: solid;
+}
+
+.home-column button:hover {
+	background-color: #5084b1;
+}
+
+.calendar-controls button {
+	margin: 5px;
+}
+#calendar {
+	margin: 20px 0;
+}
+  #chart-container {
+	width: 100%;
+	max-width: 800px;
+}
+form {
+	margin-top: 20px;
+}
+.datetime-display {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.Note textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#saveStatus {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+.logo_new {
+	width: 500px;
+}
+
+.your-image {
+	margin-top: 30px;
+	width: 400px;
+	border-radius: 200px;
+}
+
+.Meme1 {
+	border-radius: 10px;
+	width: 500px;
+}
+
+.logo_old {
+	width: 400px;
+	border-radius: 200px;
+}
+
+.logo_contact {
+	width: 50px;
+}
+
+.box-limit {
+	margin: auto;
+	width: 350px;
+}
+
+.box-limit :hover {
+	scale: 110%;
+}
+
+.text-container img {
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+body section {
+	text-align: center;
+}
+
+.text-container p {
+	padding: 0px 20px;
+	text-align: center;
+}
+
+.text-container b {
+	color: #5c9dd6;
+}
+
+.box {
+	margin: auto;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding: 0 60px;
+	max-width: 800px;
+}
+
+.box-header {
+	border: solid 1px #969696;
+	border-radius: 8px 8px 0 0;
+	background-color: #cbcbcb;
+}
+
+.box-header h4 {
+	padding: 5px;
+	margin-left: 20px;
+	color: rgb(87, 94, 117);
+}
+
+.box-body {
+	padding: 20px;
+	border: solid 1px #969696;
+	border-top: none;
+	background-color: #ffffff
+}
+
+.box-body h4 {
+	padding: 15px 60px;
+}
+
+.container img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px 8px 0 0;
+	margin-top: 15px;
+	padding: 0 60px;
+}
+
+@media screen and (max-width: 768px) {
+	.sign-in img {
+		width: 400px;
+	}
+
+	.home-column {
+		max-width: 400px;
+	}
+
+	.logo_new {
+		width: 300px;
+	}
+
+	.your-image {
+		width: 300px;
+	}
+
+	.Meme1 {
+		width: 300px;
+	}
+
+	.logo_old {
+		width: 300px;
+	}
+
+	.navlinks a:not(:first-child) {display: none;}
+	.navlinks a.icon {
+		float: right;
+		display: block;
+	}
+}
+/*Container End*/
+
+/*Footer Start*/
+
+#scrollToTopBtn {
+	font-weight: bold;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: #5c9dd6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scrollToTopBtn:hover {
+  background-color: #fff;
+	color: #5c9dd6;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	background-color: #5c9dd6;
+}
+
+.footer ul{
+	margin: auto;
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.footer li {
+	display:inline-table;
+	text-decoration: none;
+	color: #fff;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px;
+}
+/*Footer End*/
